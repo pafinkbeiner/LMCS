@@ -1,0 +1,8 @@
+services:
+  matrix-display:
+    build: .
+    container_name: matrix-display
+    network_mode: host
+    environment:
+      - INTERVAL=60
+    restart: unless-stopped

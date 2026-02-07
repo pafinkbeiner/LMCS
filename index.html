@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMCS</title>
+</head>
+<style>
+    @font-face {
+        font-family: "seg7";
+        src: url("./fonts/seg7.woff") format("woff"), url("./fonts/seg7.ttf") format("truetype");
+    }
+</style>
+<body style="margin: 0; background-color: black; display: flex; justify-content: center; align-items: center; height: 100vh; overflow: hidden;">
+    <h1 id="time" style="font-family: Arial, sans-serif; margin: 0; color: rgb(255, 0, 0); font-size: 8em;">00:00</h1>
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            document.getElementById('time').textContent = `${hours}:${minutes}`;
+        }
+        
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+</html>
