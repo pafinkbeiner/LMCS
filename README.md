@@ -1,3 +1,5 @@
+(Text ist KI erzeugt)
+
 # LMCS - LED Matrix Control System
 
 Ein Python-basiertes System zur Anzeige von dynamischen Webinhalten auf einer WLED LED-Matrix.
